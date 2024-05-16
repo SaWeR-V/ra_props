@@ -1,4 +1,8 @@
-export function Stars( {count} ) {
+import React from "react";
+type StartProps = {
+    count: number;
+}
+export function Stars({ count }: StartProps ) {
 
     if (count !== 0 && count <= 5) {
         return (
@@ -15,6 +19,6 @@ export function Stars( {count} ) {
         )
     }
     else {
-        return
+        return null
     }
 }
